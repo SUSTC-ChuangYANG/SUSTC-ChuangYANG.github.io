@@ -1,8 +1,32 @@
 <html>
 
+
+
 <head>
     <meta http-equiv="content-type" content="text/html; charset=unicode" />
     <title>Welcome to Chuang Yang's Homepage</title>
+    <style>
+        @keyframes blinker {
+          50% {
+            opacity: 0;
+          }
+        }
+    
+        .blink {
+          animation: blinker 2s linear infinite;
+        }
+    </style>
+    
+    <script>
+        function blink(id) {
+          var element = document.getElementById(id);
+          element.classList.add("blink");
+    
+          setTimeout(function() {
+            element.classList.remove("blink");
+          }, 4000);
+        }
+    </script>
 </head>
 
 <body>
@@ -41,7 +65,7 @@
                             <font color="red">Represention Learning on Large-scale Geospatial Data (Ongoing*)</font>
                         </li>
                         <li>
-                            Trajectory-based Epidemic Simulation (<font color="blue"><a href="https://ieeexplore.ieee.org/document/9750868">TVCG 22</a></font>,
+                            Trajectory-based Epidemic Simulation (<font color="blue"><a href="#epimob-yang" onclick="blink('epimob-yang')">TVCG 22</a></font>,
                             <font color="blue"><a href="https://dl.acm.org/doi/full/10.1145/3491063">TSAS 22</a></font>)
                         </li>
                         <li>
@@ -108,7 +132,7 @@
                             <font color="blue">
                                 [2022/10/21]
                             </font>
-                            Introduce our TVCG paper on  <a href="https://ieeexplore.ieee.org/document/9750868">
+                            Introduce our TVCG paper on  <a href="#epimob-yang" onclick="blink('epimob-yang')">
                                 <font color="blue">
                                     Epidemic Simulation and Visualization
                                 </font>
@@ -162,7 +186,7 @@
                                 [2022/03/22]
                             </font>
                             One first-authored paper on
-                            <a href="https://ieeexplore.ieee.org/document/9750868">
+                            <a href="#epimob-yang" onclick="blink('epimob-yang')">
                                 <font color="blue">
                                     Epidemic Simulation and Visualization
                                 </font>
@@ -339,7 +363,7 @@
                             <i>ACM Computing Surveys (<b>CSUR</b>)</i>, 2022.
                         </li>
 
-                        <li> <b>Chuang Yang</b>, Zhiwen Zhang, Zipei Fan, Renhe Jiang, Quanjun Chen, Xuan Song, Ryosuke Shibasaki. <br>
+                        <li id="epimob-yang"> <b>Chuang Yang</b>, Zhiwen Zhang, Zipei Fan, Renhe Jiang, Quanjun Chen, Xuan Song, Ryosuke Shibasaki. <br>
                             <a href="https://ieeexplore.ieee.org/document/9750868">
                                 <font color="blue">
                                     EpiMob: Interactive Visual Analytics of Citywide Human Mobility Restrictions for Epidemic Control.
@@ -354,6 +378,16 @@
                             <a href="https://drive.google.com/file/d/1ZeqMbikhNL7roh8gJwq8TlvAE4Y0PhOQ/view?usp=sharing">
                                 <font color="blue">
                                     [ppt]
+                                </font>
+                            </a>
+                            <a href="./files/tvcg-epimob-yang.pdf">
+                                <font color="blue">
+                                    [pdf]
+                                </font>
+                            </a>
+                            <a href="./files/tvcg-epimob-supp-yang.pdf">
+                                <font color="blue">
+                                    [supplementary]
                                 </font>
                             </a>
                         </li>
